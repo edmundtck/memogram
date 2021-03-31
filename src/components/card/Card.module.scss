@@ -1,0 +1,57 @@
+@use '../../styles/abstracts/' as *;
+
+.root {
+	max-Width: 345;
+
+	.avatar {
+		background-color: $color-bg-secondary;
+	}
+}
+
+.mediaWrapper {
+	position: relative;
+	cursor: pointer;
+	&:hover .backdrop {
+		opacity: .5;
+	}
+}
+
+.backdrop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: $color-bg-primary;
+	opacity: 0;
+	transition: opacity .2s;
+}
+
+.media {
+	height: 0;
+	padding-Top: 56.25%;
+}
+
+.displayName {
+	font-size: $font-heading-3;
+}
+
+.likesContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.likes {
+	padding: 1rem 0;
+	font-weight: 700;
+}
+
+.name {
+	font-weight: 700;
+}
+
+.time {
+	font-size: $font-sub-paragraph;
+	color: $color-text-secondary;
+}

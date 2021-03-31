@@ -1,0 +1,64 @@
+@use '../../styles/abstracts/' as *;
+
+.root {
+	padding: $gap-sm;
+}
+.heading {
+	margin-bottom: $gap-sm;
+}
+
+.fileInput {
+	display: none;
+}
+
+.input {
+	font-size: $font-body;
+	background-color: yellow;
+}
+.label {
+	font-size: $font-body;
+	background-color: green;
+}
+.filename {
+	overflow-wrap: anywhere;
+}
+
+.form {
+	display: grid;
+	row-gap: $gap-sm;
+}
+
+.group {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	align-items: center;
+	column-gap: $gap-sm;
+}
+
+.progressWrapper {
+	position: relative;
+}
+.progress {
+	// height: .5rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background-color: $color-primary;
+}
+.percentage {
+	font-size: $font-sub-paragraph;
+	position: relative;
+	text-align: center;
+	color: $color-text-secondary;
+}
+
+.error {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	column-gap: .5rem;
+	background-color: $color-bg-primary;
+	border-radius: 2rem;
+	padding: 1rem;
+	color: $color-primary;
+}

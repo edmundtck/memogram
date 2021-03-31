@@ -1,0 +1,27 @@
+@use './abstracts/' as *;
+
+*,
+*:after,
+*:before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit; /* set the inherit here so for 3rd party css is not affected by universal selector */
+}
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-size: 62.5%; /* 1rem = 10px, 10px / 16px = 62.5% | 10px of the default 16px from browser. easier to set rem */
+
+	@include sm {
+		font-size: 50%;
+	}
+}
+
+/* Set the default style */
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	line-height: 1.6;
+	font-size: 1.6rem;
+}

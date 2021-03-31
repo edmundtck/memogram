@@ -1,0 +1,31 @@
+@use '../../styles/abstracts/' as *;
+.root {
+	background-color: $color-primary;
+	padding: 1rem 2rem;
+	border: none;
+	font-size: inherit;
+	cursor: pointer;
+	outline: none;
+	color: $color-text-alt;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	column-gap: .5rem;
+
+	&:hover {
+		box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.5);
+	}
+}
+
+.secondary {
+	background-color: $color-secondary;
+}
+
+.disabled {
+	opacity: .8;
+	cursor: not-allowed;
+
+	&:hover {
+		box-shadow: none;
+	}
+}

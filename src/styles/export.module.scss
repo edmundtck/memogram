@@ -1,0 +1,7 @@
+@use './abstracts/' as *;
+
+// Export to theme.js
+:export {
+	colorPrimary: $color-primary;
+	colorSecondary: $color-secondary;
+}

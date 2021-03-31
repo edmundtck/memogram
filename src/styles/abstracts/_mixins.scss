@@ -1,0 +1,44 @@
+$screen-sm: 575.98px;
+$screen-md: 767.98px;
+$screen-lg: 991.98px;
+$screen-xl: 1199.98px;
+$screen-xxl: 1399.98px;
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin sm {
+	@media screen and (max-width: #{$screen-sm}) {
+		@content;
+	}
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin md {
+	@media screen and (max-width: #{$screen-md}) {
+		@content;
+	}
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin lg {
+	@media screen and (max-width: #{$screen-lg}) {
+		@content;
+	}
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin xl {
+	@media screen and (max-width: #{$screen-xl}) {
+		@content;
+	}
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin xxl {
+	@media screen and (max-width: #{$screen-xxl}) {
+		@content;
+	}
+}
+
+// @include sm {
+//	background: blue;
+// }

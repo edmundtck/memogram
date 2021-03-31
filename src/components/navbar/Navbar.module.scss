@@ -1,0 +1,32 @@
+@use '../../styles/abstracts/' as *;
+
+.root {
+	background-color: $color-bg-primary;
+	padding: 1rem 0;
+}
+
+.logo {
+	cursor: pointer;
+	display: flex;
+}
+
+.actionsContainer {
+	.avatar {
+		cursor: pointer;
+		background-color: $color-bg-secondary;
+
+		&:hover {
+			box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.5);
+		}
+	}
+}
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.actionsContainer {
+	display: flex;
+	column-gap: 2rem;
+}

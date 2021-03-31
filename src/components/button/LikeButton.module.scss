@@ -1,0 +1,14 @@
+@use '../../styles/abstracts/' as *;
+.root {
+	background-color: transparent;
+	padding: 1rem;
+
+	border: none;
+	font-size: inherit;
+	cursor: pointer;
+	outline: none;
+}
+
+.icon {
+	color: $color-primary;
+}

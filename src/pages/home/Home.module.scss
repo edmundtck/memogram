@@ -1,0 +1,16 @@
+@use '../../styles/abstracts/' as *;
+
+.root {
+	padding: $gap-md 0;
+
+	@include sm {
+		padding-top: $gap-sm;
+	}
+}
+
+.cardList {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 28rem);
+	justify-content: center;
+	gap: 3rem 3rem;
+}

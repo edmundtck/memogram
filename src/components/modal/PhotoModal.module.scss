@@ -1,0 +1,59 @@
+@use '../../styles/abstracts/' as *;
+
+.root {
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	grid-template-rows: 80vh;
+	position: relative;
+	overflow: hidden;
+
+	@include lg {
+		grid-template-columns: 1fr;
+		grid-template-rows: 70vw auto;
+	}
+}
+
+.close {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	display: flex;
+	cursor: pointer;
+}
+
+.header {
+	display: flex;
+	column-gap: $gap-sm;
+	align-items: center;
+
+	.avatar {
+		background-color: $color-bg-secondary;
+	}
+}
+
+.likes {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.imageWrapper {
+	background-color: $color-bg-primary;
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.content {
+	display: grid;
+	row-gap: $gap-sm;
+	padding: 3rem;
+}
+
+.time {
+	font-size: $font-sub-paragraph;
+	color: $color-text-secondary;
+}

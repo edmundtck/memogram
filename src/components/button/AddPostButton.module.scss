@@ -1,0 +1,20 @@
+@use '../../styles/abstracts/' as *;
+
+.root {
+	position: fixed;
+	bottom: 3rem;
+	right: 3rem;
+	background-color: $color-primary;
+	border: none;
+	outline: none;
+	color: $color-text-alt;
+	padding: 1rem;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+
+	&:hover {
+		box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.5);
+	}
+}

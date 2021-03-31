@@ -1,0 +1,25 @@
+@use '../../styles/abstracts/' as *;
+
+.root {
+	display: grid;
+	row-gap: $gap-sm;
+}
+
+.control {
+	margin-bottom: $gap-sm;
+}
+
+.actionsButton {
+	display: flex;
+	justify-content: space-between;
+}
+
+.error {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	column-gap: .5rem;
+	background-color: $color-bg-primary;
+	border-radius: 2rem;
+	padding: 1rem;
+	color: $color-primary;
+}
