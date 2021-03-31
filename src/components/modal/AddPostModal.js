@@ -45,7 +45,7 @@ const AddPostModal = ({ isOpen, handleAddPostClose }) => {
 	// 3. Creating post will happen after getting the downloadURL
 	const createPost = async (downloadURL) => {
 		try {
-			const docRef = await firestore.collection('posts').add({
+			await firestore.collection('posts').add({
 				imageURL: downloadURL,
 				user: {
 					displayName: currentUser.displayName,
@@ -56,9 +56,7 @@ const AddPostModal = ({ isOpen, handleAddPostClose }) => {
 				createdAt: timestamp
 			});
 			// to get the id of the document => docRef.id
-			console.log('Document created successfull', docRef.id);
 		} catch (error) {
-			console.error('Error adding document: ', error);
 			throw new Error(error);
 		}
 	};
